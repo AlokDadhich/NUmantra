@@ -24,15 +24,15 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
         <div className="nav-brand">
-          <Link to="./" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             <img 
-          src="public/logo.png"  // Changed from "/logo.png" to "./logo.png"
-  alt="NUmantra Infotech" 
-  className="company-logo"
-  style={{ height: '80px', width: 'auto' }}
-        onError={() => console.log("Logo failed to load")} // Add this
-        onLoad={() => console.log("Logo loaded successfully")} // Add this
-/>
+              src="./logo.png"  // Use relative path for GitHub Pages
+              alt="NUmantra Infotech" 
+              className="company-logo"
+              style={{ height: '80px', width: 'auto' }}
+              onError={() => console.log("Logo failed to load")}
+              onLoad={() => console.log("Logo loaded successfully")}
+            />
           </Link>
         </div>
         
@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={closeMenu}
           >
             Bulk Orders
-          </Link>
+          </Link>  
           <Link to="/cart" className="cart-btn" onClick={closeMenu}>
             <ShoppingCart size={18} style={{ marginRight: '8px' }} />
             Cart ({cartItemCount})

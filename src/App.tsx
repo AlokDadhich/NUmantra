@@ -16,7 +16,7 @@ import NotificationSystem from './components/common/NotificationSystem';
 function App() {
   return (
     <AppProvider>
-      <Router>
+      <Router basename="/NUmantra">
         <div className="min-h-screen bg-white">
           <Navbar />
           <Routes>
