@@ -24,8 +24,6 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
         <div className="nav-brand">
-          <Link to="./" onClick={closeMenu}>
-          </Link>
         </div>
         
         {/* Mobile menu toggle button - positioned to the right */}
