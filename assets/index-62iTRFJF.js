@@ -89,12 +89,12 @@ Error generating stack: `+l.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const Fm=ls("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]);function Um(){const{state:e}=Qe(),t=wn(),[n,r]=j.useState(!1),i=e.cart.reduce((u,c)=>u+c.quantity,0),l=u=>t.pathname===u,o=()=>{r(!n)},a=()=>{r(!1)};return s.jsxs("nav",{className:"navbar",children:[s.jsxs("div",{className:"container",style:{display:"flex",justifyContent:"space-between",alignItems:"center",position:"relative"},children:[s.jsx("div",{className:"nav-brand",children:s.jsx(Ee,{to:"./",onClick:a,children:s.jsx("img",{src:"public/logo.png",alt:"NUmantra Infotech",className:"company-logo",style:{height:"80px",width:"auto"},onError:()=>console.log("Logo failed to load"),onLoad:()=>console.log("Logo loaded successfully")})})}),s.jsx("button",{className:"mobile-menu-btn",onClick:o,style:{display:"none",background:"none",border:"none",cursor:"pointer",padding:"8px",zIndex:1e3},children:n?s.jsx(Fm,{size:24}):s.jsx(Om,{size:24})}),s.jsxs("div",{className:`nav-menu ${n?"nav-menu-open":""}`,style:{display:"flex",alignItems:"center",gap:"20px"},children:[s.jsx(Ee,{to:"/",className:`nav-link ${l("/")?"active":""}`,onClick:a,children:"Home"}),s.jsx(Ee,{to:"/about",className:`nav-link ${l("/about")?"active":""}`,onClick:a,children:"About"}),s.jsx(Ee,{to:"/products",className:`nav-link ${l("/products")?"active":""}`,onClick:a,children:"Products"}),s.jsx(Ee,{to:"/bulk-orders",className:`nav-link ${l("/bulk-orders")?"active":""}`,onClick:a,children:"Bulk Orders"}),s.jsxs(Ee,{to:"/cart",className:"cart-btn",onClick:a,children:[s.jsx(Am,{size:18,style:{marginRight:"8px"}}),"Cart (",i,")"]})]})]}),s.jsx("style",{jsx:!0,children:`
+ */const Fm=ls("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]);function Um(){const{state:e}=Qe(),t=wn(),[n,r]=j.useState(!1),i=e.cart.reduce((u,c)=>u+c.quantity,0),l=u=>t.pathname===u,o=()=>r(!n),a=()=>r(!1);return s.jsxs("nav",{className:"navbar",children:[s.jsxs("div",{className:"container",style:{display:"flex",justifyContent:"space-between",alignItems:"center",position:"relative"},children:[s.jsx("div",{className:"nav-brand",children:s.jsx(Ee,{to:"/",onClick:a,children:s.jsx("img",{src:"/logo.png",alt:"NUmantra Infotech",className:"company-logo",style:{height:"80px",width:"auto"},onError:()=>console.log("Logo failed to load"),onLoad:()=>console.log("Logo loaded successfully")})})}),s.jsx("button",{className:"mobile-menu-btn",onClick:o,style:{display:"none",background:"none",border:"none",cursor:"pointer",padding:"8px",zIndex:1e3},children:n?s.jsx(Fm,{size:24}):s.jsx(Om,{size:24})}),s.jsxs("div",{className:`nav-menu ${n?"nav-menu-open":""}`,style:{display:"flex",alignItems:"center",gap:"20px"},children:[s.jsx(Ee,{to:"/",className:`nav-link ${l("/")?"active":""}`,onClick:a,children:"Home"}),s.jsx(Ee,{to:"/about",className:`nav-link ${l("/about")?"active":""}`,onClick:a,children:"About"}),s.jsx(Ee,{to:"/products",className:`nav-link ${l("/products")?"active":""}`,onClick:a,children:"Products"}),s.jsx(Ee,{to:"/bulk-orders",className:`nav-link ${l("/bulk-orders")?"active":""}`,onClick:a,children:"Bulk Orders"}),s.jsxs(Ee,{to:"/cart",className:"cart-btn",onClick:a,children:[s.jsx(Am,{size:18,style:{marginRight:"8px"}}),"Cart (",i,")"]})]})]}),s.jsx("style",{jsx:!0,children:`
         @media (max-width: 768px) {
           .mobile-menu-btn {
             display: block !important;
           }
-          
+
           .nav-menu {
             position: absolute !important;
             top: 100% !important;
@@ -102,40 +102,41 @@ Error generating stack: `+l.message+`
             right: 0 !important;
             background: white !important;
             flex-direction: column !important;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
             display: none !important;
             z-index: 999 !important;
             padding: 0 !important;
             margin: 0 !important;
             gap: 0 !important;
           }
-          
+
           .nav-menu-open {
             display: flex !important;
           }
-          
-          .nav-link, .cart-btn {
+
+          .nav-link,
+          .cart-btn {
             padding: 15px 20px !important;
             border-bottom: 1px solid #eee !important;
             width: 100% !important;
             text-align: left !important;
             display: block !important;
           }
-          
+
           .company-logo {
             height: 60px !important;
           }
-          
+
           .container {
             padding: 10px 20px !important;
           }
         }
-        
+
         @media (min-width: 769px) {
           .nav-menu {
             display: flex !important;
           }
-          
+
           .mobile-menu-btn {
             display: none !important;
           }
