@@ -25,14 +25,6 @@ export default function Navbar() {
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
         <div className="nav-brand">
           <Link to="./" onClick={closeMenu}>
-            <img 
-          src="public/logo.png"  // Changed from "/logo.png" to "./logo.png"
-  alt="NUmantra Infotech" 
-  className="company-logo"
-  style={{ height: '80px', width: 'auto' }}
-        onError={() => console.log("Logo failed to load")} // Add this
-        onLoad={() => console.log("Logo loaded successfully")} // Add this
-/>
           </Link>
         </div>
         
